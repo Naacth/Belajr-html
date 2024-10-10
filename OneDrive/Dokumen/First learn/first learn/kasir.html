@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulasi Kasir Toko Retail</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 300px;
+  margin: auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+input[type=number] {
+  width: 50px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Simulasi Kasir Toko Retail</h1>
+  <div id="produk">
+    <label for="roti">Roti (Rp.5000):</label>
+    <input type="number" id="roti" value="0"><br>
+    <label for="susu">Susu (Rp.4000):</label>
+    <input type="number" id="susu" value="0"><br>
+    <label for="sampo">Sampo (Rp.500):</label>
+    <input type="number" id="sampo" value="0"><br>
+  </div>
+  <button onclick="hitungTotal()">Hitung Total</button>
+  <h2>Total: Rp.<span id="totalHarga">0</span></h2>
+  <h3>Diskon: Rp.<span id="diskon">0</span></h3>
+  <h3>Total Bayar: Rp.<span id="totalBayar">0</span></h3>
+  <label for="bayar">Bayar:</label>
+  <input type="number" id="bayar" value="0"><br>
+  <button onclick="hitungKembalian()">Hitung Kembalian</button>
+  <h2>Kembalian: Rp.<span id="kembalian">0</span></h2>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

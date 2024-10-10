@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day One to Learn HTML</title>
+  <style>
+    .bordered-div {
+      border: 10px solid rgb(16, 122, 243);
+      width: 300px; /* same width as the image */
+      height: 200px; /* same height as the image */
+      margin: 0 auto; /* center horizontally */
+      text-align: center; /* center text horizontally */
+      display: flex; /* use flexbox to center image vertically */
+      justify-content: center; /* center image horizontally */
+      align-items: center; /* center image vertically */
+      animation: border-animation 2s ease-in-out infinite;
+    }
+
+    @keyframes border-animation {
+      0% {
+        border-color: rgb(16, 122, 243);
+      }
+      50% {
+        border-color: rgb(221, 9, 27);
+      }
+      100% {
+        border-color: rgb(224, 107, 11);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bordered-div">
+    <img src="dark.png" alt="Animation" width="300" height="200">
+  </div>
+  <h1>Muhammad Fariz Ade Satriyo</h1>
+  <h2>Karna ini adalah pengalaman saya</h2>
+  <h3>Jadi saya akan ingat</h3>
+  <p>Ini ialah program belajar saya untuk pertama kali</p>
+  <p>Hari ini saya akan belajar mengenai HTML untuk kedua kalinya yaitu untuk <br>mengenal underline dan deadline atau baris baru<br></p>
+  <p>Unsur oksigen adalah O<sub>2</sub></p>
+  <a href="https://search.app.goo.gl/9SAhMNn" target="_blank">Upin Ipin</a>
+
+  <button onclick="playAudio()">Play Audio</button>
+  <audio id="myAudio" src="kuru.mp3" type="audio/mpeg" loop></audio>
+  <script>
+    function playAudio() {
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
